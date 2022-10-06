@@ -1,10 +1,12 @@
+
+
 // Developed at agap2
 // Based on:
 // http://www.codeply.com/go/s3I9ivCBYH/multi-carousel-single-slide-bootstrap-4
 
 $('.multi-item-carousel').on('slide.bs.carousel', function (e) {
   let $e = $(e.relatedTarget),
-      itemsPerSlide = 3,
+      itemsPerSlide = 6,
       totalItems = $('.carousel-item', this).length,
       $itemsContainer = $('.carousel-inner', this),
       it = itemsPerSlide - (totalItems - $e.index());
