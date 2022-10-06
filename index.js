@@ -6,7 +6,7 @@
 
 $('.multi-item-carousel').on('slide.bs.carousel', function (e) {
   let $e = $(e.relatedTarget),
-      itemsPerSlide = 6,
+      itemsPerSlide = 3,
       totalItems = $('.carousel-item', this).length,
       $itemsContainer = $('.carousel-inner', this),
       it = itemsPerSlide - (totalItems - $e.index());
